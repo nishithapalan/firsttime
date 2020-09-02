@@ -22,20 +22,20 @@ typedef struct
 	uint16_t	out1pin;
 	uint16_t	out2pin;
 	uint16_t	out3pin;
-}keypadwires_typedef;
+}keypad_wires_typedef;
 
 //FUNCTIONS
 //f1 setting keypad pins and ports
-void Keypad_4x4_setting(keypadwires_typedef, *keypadwire_struct);
+void Keypad_4x4_setting(keypad_wires_typedef, *keypadwiringStruct);
 
 //f2 find pin position of the coloumn
-void Keypad_4x4_findposition(void);
+static void Keypad_4x4_findposition(void);
 
 //f3 changing coloumn oin
-void Keypad_4x4_changecol(uint8_t coloumn0_3);
+static void Keypad_4x4_changecol(uint8_t coloumn0_3);
 
 //f4 reading the pin
 void Keypad_4x4_readp(bool Keys[16]);
 
 //f5 getting the key character
-*char Keypad_4x4_getcr(uint8_t keySw);
+char* Keypad_4x4_getcr(uint8_t keypadSw);
