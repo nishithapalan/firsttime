@@ -38,4 +38,4 @@ void Keypad_4x4_changecol(uint8_t coloumn0_3);
 void Keypad_4x4_readp(bool Keys[16]);
 
 //f5 getting the key character
-*char Keypad_4x4_getcr(uint8_t keySw0);
+*char Keypad_4x4_getcr(uint8_t keySw);
