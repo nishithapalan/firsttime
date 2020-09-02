@@ -135,9 +135,9 @@ keys[15]=HAL_GPIO_ReadPin(keypadstruct.in3_port, keypad.in3_pin);
 }
 
 //f5 getting char
-*char Keypad_4x4_getcr(uint8_t keySw0)
+*char Keypad_4x4_getcr(uint8_t keySw)
 {
-return keypad_keys[keySw0];
+return keypad_keys[keySw];
 }
 
 
